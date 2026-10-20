@@ -196,6 +196,13 @@ section { padding: 88px 0 0; }
 .models { margin-top: 20px; color: var(--muted); font-size: 15px; }
 
 /* apps */
+.more-apps { margin: 40px 0 12px; font-size: 20px; }
+.app-list { list-style: none; padding: 0; margin: 0; border-top: 2px solid var(--ink); }
+.app-list li { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--rule); }
+.app-list a { font-weight: 600; display: block; }
+.app-list span { color: var(--muted); font-size: 15px; }
+.app-list em { font-style: normal; font-size: 13px; font-weight: 600; white-space: nowrap; padding: 3px 9px; border-radius: 999px; background: var(--sunken); color: var(--muted); }
+.all-apps { margin-top: 20px; }
 .apps { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 @media (max-width: 800px) { .apps { grid-template-columns: 1fr; } }
 .app { background: var(--surface); border: 1px solid var(--rule); border-radius: var(--r-lg); padding: 26px; display: flex; flex-direction: column; gap: 12px; }
@@ -620,7 +627,7 @@ section { padding: 88px 0 0; }
   <section id="apps">
     <div class="sec-head">
       <h2>Published on the Odoo App Store</h2>
-      <p>Two AI apps for Odoo 19 eCommerce, available to any Odoo business.</p>
+      <p>Apps for Odoo 17, 18 and 19 that any Odoo business can install, from AI eCommerce to POS, chatter and accounting tools.</p>
     </div>
     <div class="apps">
       <article class="app">
@@ -637,6 +644,17 @@ section { padding: 88px 0 0; }
         <a class="go" href="https://apps.odoo.com/apps/modules/19.0/ai_ecom_product_suggester" target="_blank" rel="noopener">View on Odoo Apps</a>
       </article>
     </div>
+    <h3 class="more-apps">More apps I've published</h3>
+    <ul class="app-list">
+      <li><div><a href="https://apps.odoo.com/apps/modules/19.0/ai_hr_recruitment_form" target="_blank" rel="noopener">AI CV Parser &amp; Recruiter Form</a><span>Adds AI CV parsing to the recruitment form, so hiring takes fewer steps.</span></div><em>Odoo 19</em></li>
+      <li><div><a href="https://apps.odoo.com/apps/modules/17.0/plaid_integration" target="_blank" rel="noopener">Automatic Plaid Synchronization</a><span>Imports bank statements automatically from supported banks through Plaid.</span></div><em>Odoo 17</em></li>
+      <li><div><a href="https://apps.odoo.com/apps/modules/17.0/private_chat" target="_blank" rel="noopener">Private Chat: Personal &amp; Group Messages</a><span>Private messages in the chatter that only the selected users can see.</span></div><em>Odoo 17</em></li>
+      <li><div><a href="https://apps.odoo.com/apps/modules/17.0/private_thread" target="_blank" rel="noopener">Private Thread: Personal Messages</a><span>Confidential chatter messages to chosen recipients, with fewer unnecessary emails.</span></div><em>Odoo 17</em></li>
+      <li><div><a href="https://apps.odoo.com/apps/modules/17.0/pos_pricelist_items_only" target="_blank" rel="noopener">POS Product Restriction</a><span>Shows only the products in the active price list at the Point of Sale.</span></div><em>Odoo 17</em></li>
+      <li><div><a href="https://apps.odoo.com/apps/modules/17.0/pos_invoice_reference" target="_blank" rel="noopener">POS Invoice Reference</a><span>Adds an order reference to new POS orders so they're easier to find in the backend. Free.</span></div><em>Odoo 17</em></li>
+      <li><div><a href="https://apps.odoo.com/apps/modules/18.0/open_new_tab_lk" target="_blank" rel="noopener">Open New Tab by Ctrl + Click</a><span>Opens any record in a new browser tab with Ctrl + click.</span></div><em>Odoo 18</em></li>
+    </ul>
+    <p class="all-apps"><a class="btn" href="https://apps.odoo.com/apps/browse?repo_maintainer_id=361718" target="_blank" rel="noopener">See all my apps on the Odoo App Store</a></p>
   </section>
 
   <section id="experience">
