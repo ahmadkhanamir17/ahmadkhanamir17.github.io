@@ -3,433 +3,777 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ahmad Khan — Senior Odoo Developer & AI Automation Engineer</title>
-<meta name="description" content="Portfolio of Ahmad Khan: Senior Odoo Developer, Techno-Functional Consultant and AI Automation Engineer based in Riyadh. Case studies across government, healthcare, e-commerce, procurement and retail.">
-<meta property="og:title" content="Ahmad Khan — Senior Odoo Developer & AI Automation Engineer">
-<meta property="og:description" content="6 years, 12+ Odoo projects, 5 migrations up to v20, AI assistants and published Odoo apps.">
+<title>Ahmad Khan | Senior Odoo Developer & AI Automation Engineer</title>
+<meta name="description" content="Ahmad Khan, Senior Odoo Developer and Techno-Functional Consultant in Riyadh. 6 years, 12+ Odoo projects, 5 migrations up to Odoo 20, permission-aware AI assistants and published Odoo apps.">
+<meta name="author" content="Ahmad Khan">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Ahmad Khan | Senior Odoo Developer & AI Automation Engineer">
+<meta property="og:description" content="6 years, 12+ Odoo projects, 5 migrations up to Odoo 20, AI assistants and published Odoo apps.">
+<meta property="og:url" content="https://ahmadkhanamir17.github.io/">
+<link rel="canonical" href="https://ahmadkhanamir17.github.io/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F6B4F'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='700' font-size='30' text-anchor='middle' fill='white'%3EAK%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ahmad Khan",
+  "jobTitle": "Senior Odoo Developer",
+  "url": "https://ahmadkhanamir17.github.io/",
+  "email": "mailto:ahmadkhanamir17@gmail.com",
+  "address": {"@type": "PostalAddress", "addressLocality": "Riyadh", "addressCountry": "SA"},
+  "alumniOf": "Abdul Wali Khan University Mardan",
+  "knowsAbout": ["Odoo", "Python", "PostgreSQL", "FastAPI", "LangChain", "ERP", "ZATCA e-invoicing", "AI automation"],
+  "sameAs": ["https://github.com/ahmadkhanamir17", "https://www.linkedin.com/in/ahmadkhanamir17"]
+}
+</script>
 <style>
-  :root {
-    --bg: #f7f8fb; --surface: #ffffff; --text: #111827; --muted: #4b5563; --line: #e5e7eb;
-    --brand: #714b67; --brand-2: #017e84; --chip: #f3eef2; --shadow: 0 1px 2px rgba(0,0,0,.04), 0 8px 24px rgba(17,24,39,.06);
+:root {
+  --paper: #F4F6F5; --surface: #FFFFFF; --sunken: #EAEFEC; --ink: #13201B; --muted: #55665F;
+  --rule: #D3DCD7; --green: #0F6B4F; --green-soft: #DCEEE6; --amber: #A86A12; --amber-soft: #F6EAD4;
+  --on-green: #FFFFFF;
+  --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body: "Public Sans", "Segoe UI", system-ui, sans-serif;
+  --r-sm: 6px; --r-md: 10px; --r-lg: 16px;
+}
+:root[data-theme="dark"] {
+  --paper: #0E1613; --surface: #15201C; --sunken: #1B2823; --ink: #E3ECE7; --muted: #9DB0A8;
+  --rule: #2A3A33; --green: #4CC79A; --green-soft: #173A2E; --amber: #E3AA4E; --amber-soft: #3A2D16; --on-green: #0E1613;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0E1613; --surface: #15201C; --sunken: #1B2823; --ink: #E3ECE7; --muted: #9DB0A8;
+    --rule: #2A3A33; --green: #4CC79A; --green-soft: #173A2E; --amber: #E3AA4E; --amber-soft: #3A2D16; --on-green: #0E1613;
   }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg: #0d1117; --surface: #161b22; --text: #e6edf3; --muted: #9da7b3; --line: #30363d;
-            --brand: #c79bbd; --brand-2: #3fc1c6; --chip: #241c22; --shadow: none; }
-  }
-  * { box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  body { margin: 0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background: var(--bg);
-         color: var(--text); line-height: 1.6; font-size: 16px; }
-  a { color: var(--brand-2); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation: none !important; transition: none !important; } }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 400 17px/1.6 var(--body); -webkit-font-smoothing: antialiased; }
+a { color: var(--green); text-underline-offset: 3px; }
+:focus-visible { outline: 3px solid var(--amber); outline-offset: 2px; border-radius: 4px; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+@media (max-width: 600px) { .wrap { padding: 0 16px; } }
+h1, h2, h3 { font-family: var(--display); letter-spacing: -0.02em; line-height: 1.12; margin: 0; }
+h2 { font-size: clamp(30px, 4vw, 42px); font-weight: 800; }
+h3 { font-size: 22px; font-weight: 700; }
+p { margin: 0; }
+.measure { max-width: 68ch; }
+.muted { color: var(--muted); }
+.skip { position: absolute; left: -999px; top: 8px; background: var(--ink); color: var(--paper); padding: 8px 14px; border-radius: 6px; z-index: 50; }
+.skip:focus { left: 8px; }
 
-  nav { position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--bg) 88%, transparent);
-        backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
-  nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 58px; gap: 16px; }
-  nav .logo { font-weight: 800; color: var(--text); letter-spacing: -.02em; }
-  nav ul { display: flex; gap: 20px; list-style: none; margin: 0; padding: 0; font-size: 14px; font-weight: 500; }
-  nav ul a { color: var(--muted); }
-  @media (max-width: 720px) { nav ul { display: none; } }
+/* ---------- nav ---------- */
+.topbar { position: sticky; top: 0; z-index: 20; background: color-mix(in srgb, var(--paper) 90%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--rule); }
+.topbar .wrap { height: 64px; display: flex; align-items: center; gap: 24px; }
+.brand { white-space: nowrap; display: flex; align-items: center; gap: 10px; font: 700 18px var(--display); color: var(--ink); text-decoration: none; margin-right: auto; }
+.brand i { width: 30px; height: 30px; border-radius: 8px; background: var(--green); color: var(--on-green); display: grid; place-items: center; font: 700 13px var(--body); font-style: normal; }
+.links { display: flex; gap: 22px; }
+.links a { color: var(--muted); text-decoration: none; font-weight: 500; font-size: 15px; }
+.links a:hover { color: var(--ink); }
+@media (max-width: 880px) { .links { display: none; } }
+@media (max-width: 420px) { .topbar .btn { padding: 0 12px; font-size: 14px; } .topbar .wrap { gap: 10px; } }
+.iconbtn { width: 40px; height: 40px; border-radius: var(--r-md); border: 1px solid var(--rule); background: var(--surface); color: var(--ink); display: grid; place-items: center; cursor: pointer; }
+.btn { white-space: nowrap; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 18px; border-radius: var(--r-md); font: 600 15px var(--body); text-decoration: none; border: 1px solid var(--rule); background: var(--surface); color: var(--ink); cursor: pointer; }
+.btn:hover { border-color: var(--green); }
+.btn.solid { background: var(--green); border-color: var(--green); color: var(--on-green); }
+.btn svg { width: 18px; height: 18px; }
 
-  .btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: 10px; font-weight: 600;
-         font-size: 15px; border: 1px solid var(--line); color: var(--text); background: var(--surface); }
-  .btn:hover { text-decoration: none; border-color: var(--brand); }
-  .btn.primary { background: var(--brand); color: #fff; border-color: var(--brand); }
-  @media (prefers-color-scheme: dark) { .btn.primary { color: #0d1117; } }
+/* ---------- hero ---------- */
+.hero { padding: 64px 0 72px; display: grid; grid-template-columns: 1.05fr 1fr; gap: 56px; align-items: center; }
+@media (max-width: 960px) { .hero { grid-template-columns: 1fr; gap: 40px; padding-top: 40px; } }
+.hero h1 { font-size: clamp(42px, 6.4vw, 76px); font-weight: 800; letter-spacing: -0.035em; line-height: 1.02; }
+.hero .role { margin-top: 18px; font: 600 20px/1.4 var(--display); color: var(--green); }
+.hero .intro { margin-top: 18px; font-size: 18.5px; color: var(--muted); max-width: 56ch; }
+.hero .actions { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 10px; }
 
-  header.hero { padding: 72px 0 48px; }
-  .eyebrow { color: var(--brand-2); font-weight: 600; font-size: 14px; letter-spacing: .04em; text-transform: uppercase; }
-  h1 { font-size: clamp(34px, 5vw, 52px); line-height: 1.1; margin: 10px 0 14px; letter-spacing: -.03em; }
-  .lead { font-size: 19px; color: var(--muted); max-width: 760px; margin: 0 0 26px; }
-  .actions { display: flex; flex-wrap: wrap; gap: 10px; }
-  .facts { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 22px; color: var(--muted); font-size: 14px; }
+/* the record: an ERP form view of the candidate */
+.record { background: var(--surface); border: 1px solid var(--rule); border-radius: var(--r-lg); box-shadow: 0 20px 50px -28px rgba(15, 60, 45, .35); overflow: hidden; }
+.record-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 16px; border-bottom: 1px solid var(--rule); background: var(--sunken); font-size: 13.5px; color: var(--muted); }
+.crumb b { color: var(--ink); font-weight: 600; }
+.avail { display: inline-flex; align-items: center; gap: 7px; font-weight: 600; color: var(--green); }
+.avail::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--green); box-shadow: 0 0 0 4px var(--green-soft); }
+.smart { display: grid; grid-template-columns: repeat(4, 1fr); border-bottom: 1px solid var(--rule); }
+.smart div { padding: 14px 12px; border-left: 1px solid var(--rule); }
+.smart div:first-child { border-left: 0; }
+.smart b { display: block; font: 800 24px/1.1 var(--display); letter-spacing: -0.02em; }
+.smart span { font-size: 13px; color: var(--muted); }
+@media (max-width: 520px) { .smart { grid-template-columns: repeat(2, 1fr); } .smart div:nth-child(3) { border-left: 0; } .smart div:nth-child(n+3) { border-top: 1px solid var(--rule); } }
+.status { display: flex; padding: 16px 16px 4px; gap: 2px; }
+.status li { list-style: none; flex: 1; position: relative; padding: 9px 6px 9px 18px; font-size: 12.5px; font-weight: 600; text-align: center; background: var(--sunken); color: var(--muted);
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 50%, calc(100% - 10px) 100%, 0 100%, 10px 50%); }
+.status li:first-child { clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 50%, calc(100% - 10px) 100%, 0 100%); padding-left: 8px; border-radius: 6px 0 0 6px; }
+.status li.done { background: var(--green-soft); color: var(--green); }
+.status li.now { background: var(--green); color: var(--on-green); }
+.status { margin: 0; }
+@keyframes stepIn { from { opacity: .25; } to { opacity: 1; } }
+.status li { animation: stepIn .45s ease-out both; }
+.status li:nth-child(2) { animation-delay: .15s; } .status li:nth-child(3) { animation-delay: .3s; } .status li:nth-child(4) { animation-delay: .45s; }
+.status-note { padding: 0 16px; font-size: 12.5px; color: var(--muted); }
+.fields { display: grid; grid-template-columns: 1fr 1fr; gap: 0 24px; padding: 14px 16px 18px; margin: 0; }
+.fields div { display: grid; grid-template-columns: 92px 1fr; gap: 8px; padding: 7px 0; border-bottom: 1px dashed var(--rule); font-size: 14.5px; }
+.fields dt { color: var(--muted); }
+.fields dd { margin: 0; font-weight: 600; }
+@media (max-width: 520px) { .fields { grid-template-columns: 1fr; } }
 
-  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 8px 0 0; }
-  .stat { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 18px; box-shadow: var(--shadow); }
-  .stat b { display: block; font-size: 28px; letter-spacing: -.02em; color: var(--brand); }
-  .stat span { color: var(--muted); font-size: 14px; }
+/* ---------- sections ---------- */
+section { padding: 88px 0 0; }
+.sec-head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 24px 56px; align-items: end; margin-bottom: 36px; }
+.sec-head p { color: var(--muted); font-size: 17.5px; }
+@media (max-width: 860px) { .sec-head { grid-template-columns: 1fr; } }
 
-  section { padding: 56px 0 8px; }
-  h2 { font-size: 28px; letter-spacing: -.02em; margin: 0 0 6px; }
-  .sub { color: var(--muted); margin: 0 0 26px; }
+/* achievements: a ledger, not cards */
+.ledger { border-top: 2px solid var(--ink); }
+.ledger-row { display: grid; grid-template-columns: 180px minmax(0, 1fr) minmax(0, 1.2fr); gap: 8px 32px; padding: 20px 0; border-bottom: 1px solid var(--rule); align-items: baseline; }
+.ledger-row b { font: 800 34px/1 var(--display); letter-spacing: -0.03em; color: var(--green); }
+.ledger-row h3 { font-size: 19px; }
+.ledger-row p { color: var(--muted); }
+@media (max-width: 760px) { .ledger-row { grid-template-columns: 1fr; } }
 
-  .grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; }
-  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 22px; box-shadow: var(--shadow); }
-  .card h3 { margin: 0 0 6px; font-size: 18px; }
-  .card p { margin: 0; color: var(--muted); }
+/* work */
+.filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+.filter { min-height: 38px; padding: 0 14px; border-radius: 999px; border: 1px solid var(--rule); background: var(--surface); color: var(--ink); font: 500 14.5px var(--body); cursor: pointer; }
+.filter[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+.filter .n { color: var(--muted); margin-left: 4px; }
+.filter[aria-pressed="true"] .n { color: inherit; opacity: .7; }
+.tools { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+.linkbtn { background: none; border: 0; color: var(--green); font: 600 14.5px var(--body); cursor: pointer; padding: 6px 0; text-decoration: underline; text-underline-offset: 3px; }
+.cases { border-top: 2px solid var(--ink); }
+.case { border-bottom: 1px solid var(--rule); }
+.case > summary { list-style: none; cursor: pointer; display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) auto; gap: 6px 28px; align-items: center; padding: 22px 4px; }
+.case > summary::-webkit-details-marker { display: none; }
+.case > summary:hover h3 { color: var(--green); }
+.case .one { color: var(--muted); font-size: 15.5px; margin-top: 4px; }
+.case .where { font-size: 14.5px; color: var(--muted); }
+.case .where strong { display: block; color: var(--ink); font-weight: 600; }
+.plus { width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--rule); display: grid; place-items: center; transition: transform .2s; }
+.case[open] .plus { transform: rotate(45deg); background: var(--ink); color: var(--paper); border-color: var(--ink); }
+@media (max-width: 760px) { .case > summary { grid-template-columns: 1fr auto; } .case .where { grid-column: 1; grid-row: 2; } .plus { grid-row: 1 / span 2; grid-column: 2; } }
+.case-body { padding: 4px 4px 30px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+@media (max-width: 860px) { .case-body { grid-template-columns: 1fr; gap: 20px; } }
+.case-body h4 { margin: 0 0 8px; font: 700 15px var(--display); color: var(--ink); }
+.case-body ul { margin: 0; padding-left: 18px; color: var(--muted); font-size: 15.5px; }
+.case-body li { margin: 5px 0; }
+.result { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; justify-content: space-between; padding: 14px 16px; background: var(--green-soft); border-radius: var(--r-md); }
+.result p { font-weight: 600; color: var(--ink); max-width: 75ch; }
+.stack { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 6px; }
+.stack span { font-size: 13px; padding: 3px 10px; border-radius: var(--r-sm); background: var(--sunken); color: var(--muted); }
+.ind { display: inline-block; margin-left: 8px; vertical-align: 3px; font: 600 12px var(--body); padding: 3px 9px; border-radius: 999px; background: var(--amber-soft); color: var(--amber); letter-spacing: 0; }
+.also { margin-top: 22px; color: var(--muted); }
+.also b { color: var(--ink); }
 
-  .case { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 26px; margin-bottom: 18px; box-shadow: var(--shadow); }
-  .case-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 16px; align-items: baseline; }
-  .case h3 { margin: 0; font-size: 22px; letter-spacing: -.01em; }
-  .meta { color: var(--muted); font-size: 14px; }
-  .tag { display: inline-block; font-size: 12px; font-weight: 600; padding: 3px 9px; border-radius: 999px;
-         background: var(--chip); color: var(--brand); margin-left: 6px; vertical-align: middle; }
-  .case .summary { margin: 10px 0 16px; font-size: 17px; }
-  .cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
-  .cols h4 { margin: 0 0 6px; font-size: 13px; text-transform: uppercase; letter-spacing: .05em; color: var(--brand-2); }
-  .cols ul { margin: 0; padding-left: 18px; }
-  .cols li { margin: 4px 0; }
-  .highlight { margin-top: 16px; padding: 12px 14px; border-radius: 12px; background: var(--chip); font-weight: 500; }
-  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
-  .chip { font-size: 12.5px; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+/* migrations */
+.mig { background: var(--surface); border: 1px solid var(--rule); border-radius: var(--r-lg); padding: 28px 28px 20px; overflow-x: auto; }
+.mig-grid { min-width: 640px; }
+.axis, .lane { display: grid; grid-template-columns: 170px repeat(9, 1fr); align-items: center; }
+.axis span { font: 700 14px var(--display); color: var(--muted); text-align: center; }
+.axis span:first-child { text-align: left; font: 500 13px var(--body); }
+.lane { padding: 9px 0; border-top: 1px dashed var(--rule); }
+.lane > span { font-weight: 600; font-size: 14.5px; }
+.bar { margin: 0 calc(50% / var(--span) - 10px); height: 26px; border-radius: 999px; background: var(--green-soft); border: 2px solid var(--green); position: relative; display: flex; align-items: center; justify-content: space-between; padding: 0 3px; }
+.bar::before, .bar::after { content: ""; width: 14px; height: 14px; border-radius: 50%; background: var(--surface); border: 3px solid var(--green); }
+.bar::after { background: var(--green); }
+.mig-note { margin-top: 14px; font-size: 14px; color: var(--muted); }
 
-  .timeline { border-left: 2px solid var(--line); margin-left: 6px; padding-left: 22px; }
-  .job { position: relative; margin-bottom: 26px; }
-  .job::before { content: ""; position: absolute; left: -29px; top: 7px; width: 12px; height: 12px; border-radius: 50%;
-                 background: var(--brand); border: 3px solid var(--bg); }
-  .job h3 { margin: 0; font-size: 18px; }
-  .job .meta { margin-bottom: 6px; }
-  .job ul { margin: 6px 0 0; padding-left: 18px; color: var(--muted); }
+/* AI */
+.ai { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 40px; align-items: start; }
+@media (max-width: 900px) { .ai { grid-template-columns: 1fr; } }
+.flow { background: var(--surface); border: 1px solid var(--rule); border-radius: var(--r-lg); padding: 24px; }
+.flow ol { list-style: none; margin: 0; padding: 0; position: relative; }
+.flow ol::before { content: ""; position: absolute; left: 17px; top: 20px; bottom: 20px; width: 2px; background: var(--rule); }
+.flow li { position: relative; display: grid; grid-template-columns: 36px 1fr; gap: 14px; padding: 10px 0; }
+.flow .dot { width: 36px; height: 36px; border-radius: 50%; background: var(--sunken); border: 2px solid var(--rule); display: grid; place-items: center; font: 700 14px var(--display); color: var(--muted); z-index: 1; }
+.flow li.key .dot { background: var(--green); border-color: var(--green); color: var(--on-green); }
+.flow h4 { margin: 4px 0 2px; font: 700 16px var(--display); }
+.flow p { font-size: 15px; color: var(--muted); }
+.ai-list { display: grid; gap: 0; border-top: 2px solid var(--ink); }
+.ai-list div { padding: 16px 0; border-bottom: 1px solid var(--rule); }
+.ai-list h3 { font-size: 18px; margin-bottom: 4px; }
+.ai-list p { color: var(--muted); font-size: 15.5px; }
+.models { margin-top: 20px; color: var(--muted); font-size: 15px; }
 
-  .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; }
-  .skills .card p { font-size: 15px; }
+/* apps */
+.apps { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+@media (max-width: 800px) { .apps { grid-template-columns: 1fr; } }
+.app { background: var(--surface); border: 1px solid var(--rule); border-radius: var(--r-lg); padding: 26px; display: flex; flex-direction: column; gap: 12px; }
+.app .badge { align-self: flex-start; font: 600 12.5px var(--body); padding: 4px 10px; border-radius: 999px; background: var(--green-soft); color: var(--green); }
+.app p { color: var(--muted); }
+.app .go { margin-top: auto; padding-top: 6px; font-weight: 600; }
 
-  footer { margin-top: 64px; padding: 40px 0 60px; border-top: 1px solid var(--line); }
-  footer .row { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; align-items: center; }
-  .small { font-size: 13px; color: var(--muted); }
+/* experience */
+.xp { display: grid; grid-template-columns: 220px minmax(0, 1fr); border-top: 2px solid var(--ink); }
+.xp > div { padding: 24px 0; border-bottom: 1px solid var(--rule); }
+.xp .when { padding-right: 24px; color: var(--muted); font-size: 15px; }
+.xp .when b { display: block; color: var(--ink); font: 700 16px var(--display); }
+.xp h3 { font-size: 20px; }
+.xp .co { color: var(--green); font-weight: 600; margin: 2px 0 8px; }
+.xp ul { margin: 0; padding-left: 18px; color: var(--muted); font-size: 15.5px; max-width: 78ch; }
+.xp li { margin: 5px 0; }
+@media (max-width: 700px) { .xp { grid-template-columns: 1fr; } .xp .when { padding-bottom: 0; border-bottom: 0; } }
+
+/* skills */
+.skills { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 40px; }
+@media (max-width: 900px) { .skills { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .skills { grid-template-columns: 1fr; } }
+.skill { padding: 18px 0; border-top: 1px solid var(--rule); }
+.skill h3 { font-size: 17px; margin-bottom: 8px; }
+.skill p { color: var(--muted); font-size: 15px; }
+
+.creds { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+@media (max-width: 800px) { .creds { grid-template-columns: 1fr; } }
+.creds ul { list-style: none; padding: 0; margin: 14px 0 0; border-top: 2px solid var(--ink); }
+.creds li { padding: 12px 0; border-bottom: 1px solid var(--rule); display: flex; justify-content: space-between; gap: 16px; }
+.creds li span { color: var(--muted); white-space: nowrap; font-size: 15px; }
+
+/* contact */
+.contact { margin-top: 96px; background: var(--ink); color: var(--paper); }
+.contact .wrap { padding-top: 64px; padding-bottom: 64px; display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: end; }
+@media (max-width: 860px) { .contact .wrap { grid-template-columns: 1fr; } }
+.contact h2 { font-size: clamp(34px, 5vw, 56px); }
+.contact p { margin-top: 14px; opacity: .8; max-width: 52ch; }
+.contact .actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.contact .btn { background: transparent; color: var(--paper); border-color: color-mix(in srgb, var(--paper) 30%, transparent); }
+.contact .btn.solid { background: var(--paper); color: var(--ink); border-color: var(--paper); }
+.foot { padding: 22px 0 36px; font-size: 14px; color: var(--muted); }
+.foot .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+
+@media print {
+  .topbar, .filters, .tools, .iconbtn, .hero .actions, .contact .actions { display: none !important; }
+  .case-body { display: grid !important; }
+  body { background: #fff; }
+}
 </style>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
-<nav>
+<header class="topbar">
   <div class="wrap">
-    <a class="logo" href="#top">Ahmad Khan</a>
-    <ul>
-      <li><a href="#work">Case studies</a></li>
-      <li><a href="#apps">Odoo apps</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <a class="btn primary" href="Ahmad_Khan_CV.pdf" download>Download CV</a>
-  </div>
-</nav>
-
-<header class="hero" id="top">
-  <div class="wrap">
-    <div class="eyebrow">Senior Odoo Developer · Techno-Functional Consultant · AI Automation Engineer</div>
-    <h1>I design, build and scale Odoo ERP systems, and bring AI into them.</h1>
-    <p class="lead">Certified Odoo Functional Consultant with 6 years and 12+ delivered projects for government, healthcare, e-commerce, procurement, retail and manufacturing in Saudi Arabia, Malta, Pakistan and China. I take projects from requirements and solution design to go-live, and for the past 2+ years I have been building permission-aware AI assistants and automation on top of Odoo.</p>
-    <div class="actions">
-      <a class="btn primary" href="#work">View case studies</a>
-      <a class="btn" href="mailto:ahmadkhanamir17@gmail.com">Email me</a>
-      <a class="btn" href="https://www.linkedin.com/in/ahmadkhanamir17" target="_blank" rel="noopener">LinkedIn</a>
-      <a class="btn" href="https://github.com/ahmadkhanamir17" target="_blank" rel="noopener">GitHub</a>
-    </div>
-    <div class="facts">
-      <span>📍 Riyadh, Saudi Arabia</span>
-      <span>🪪 Iqama: Transferable</span>
-      <span>⏱️ Notice period: 1 month</span>
-      <span>✈️ Open to relocation</span>
-    </div>
-
-    <div class="stats" style="margin-top:34px">
-      <div class="stat"><b>6 yrs</b><span>Odoo & Python</span></div>
-      <div class="stat"><b>12+</b><span>delivered projects</span></div>
-      <div class="stat"><b>v12–v20</b><span>Community & Enterprise</span></div>
-      <div class="stat"><b>5</b><span>code & database migrations</span></div>
-      <div class="stat"><b>15+</b><span>integrations incl. ZATCA & SAP</span></div>
-      <div class="stat"><b>6,000+</b><span>users on a government platform</span></div>
-    </div>
+    <a class="brand" href="#top"><i>AK</i>Ahmad Khan</a>
+    <nav class="links" aria-label="Sections">
+      <a href="#work">Projects</a>
+      <a href="#ai">AI work</a>
+      <a href="#apps">Apps</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+    </nav>
+    <button class="iconbtn" id="theme" type="button" aria-label="Switch light or dark theme">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+    <a class="btn solid" href="Ahmad_Khan_CV.pdf" download>Download CV</a>
   </div>
 </header>
 
-<main class="wrap">
+<main id="main">
+<div class="wrap">
 
-  <section id="highlights">
-    <h2>Key achievements</h2>
-    <p class="sub">The results I am proudest of.</p>
-    <div class="grid2">
-      <div class="card"><h3>National government platform</h3><p>Leading Odoo delivery of the Ministry of Islamic Affairs' E-Masajid platform, serving 6,000+ users.</p></div>
-      <div class="card"><h3>Published AI apps</h3><p>AI Smart Semantic Search and Product Suggester on the official Odoo App Store; AI cross-sell and up-sell saves about 95% of manual work.</p></div>
-      <div class="card"><h3>Migrations up to Odoo 20</h3><p>5 cross-version migrations of code and database: v17→v20, v17→v19, v17→v18, v16→v18 and v15→v17.</p></div>
-      <div class="card"><h3>AI healthcare reports</h3><p>10+ page patient health reports generated in under 2 minutes, saving carers 80%+ of report-writing time.</p></div>
-      <div class="card"><h3>Bulk quality control</h3><p>QA for orders with 1,000+ different products, with partial pass and fail quantities per line.</p></div>
-      <div class="card"><h3>Award-winning e-procurement</h3><p>FPCL's Successful E-Procurement Implementation Award for the e-bidding and vendor portal system.</p></div>
+  <div class="hero" id="top">
+    <div>
+      <h1>Ahmad Khan</h1>
+      <p class="role">Senior Odoo Developer, Techno-Functional Consultant and AI Automation Engineer</p>
+      <p class="intro">I design, build and scale Odoo ERP systems, then make them smarter with AI. Six years and 12+ delivered projects for government, healthcare, e-commerce, procurement, retail and manufacturing clients in Saudi Arabia, Malta, Pakistan and China, from requirements and solution design through go-live and support.</p>
+      <div class="actions">
+        <a class="btn solid" href="#work">See my projects</a>
+        <a class="btn" href="mailto:ahmadkhanamir17@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Email</a>
+        <a class="btn" href="https://www.linkedin.com/in/ahmadkhanamir17" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21H9z"/></svg>LinkedIn</a>
+        <a class="btn" href="https://github.com/ahmadkhanamir17" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 2.9.8.1-.7.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg>GitHub</a>
+      </div>
+    </div>
+
+    <aside class="record" aria-label="Profile summary">
+      <div class="record-head">
+        <span class="crumb">Employees / <b>Ahmad Khan</b></span>
+        <span class="avail">Open to new roles</span>
+      </div>
+      <div class="smart">
+        <div><b>6 yrs</b><span>Odoo &amp; Python</span></div>
+        <div><b>12+</b><span>Projects</span></div>
+        <div><b>5</b><span>Migrations</span></div>
+        <div><b>15+</b><span>Integrations</span></div>
+      </div>
+      <ol class="status" aria-label="Career stages">
+        <li class="done">Junior</li>
+        <li class="done">Developer</li>
+        <li class="done">Senior</li>
+        <li class="now" aria-current="step">Team Lead</li>
+      </ol>
+      <p class="status-note">From junior developer in 2020 to team lead today</p>
+      <dl class="fields">
+        <div><dt>Location</dt><dd>Riyadh, KSA</dd></div>
+        <div><dt>Iqama</dt><dd>Transferable</dd></div>
+        <div><dt>Notice</dt><dd>1 month</dd></div>
+        <div><dt>Relocation</dt><dd>Open</dd></div>
+        <div><dt>Odoo</dt><dd>v12 to v20</dd></div>
+        <div><dt>Editions</dt><dd>Community, Enterprise</dd></div>
+        <div><dt>Certified</dt><dd>Odoo v16</dd></div>
+        <div><dt>Languages</dt><dd>English, Urdu, Pashto</dd></div>
+      </dl>
+    </aside>
+  </div>
+
+  <section id="highlights" style="padding-top:24px">
+    <div class="sec-head">
+      <h2>Results that matter</h2>
+      <p>What changed for the people who use the systems I build.</p>
+    </div>
+    <div class="ledger">
+      <div class="ledger-row"><b>6,000+</b><h3>Users on a national government platform</h3><p>Leading Odoo delivery of the Ministry of Islamic Affairs' E-Masajid mosque management system.</p></div>
+      <div class="ledger-row"><b>80%+</b><h3>Less time writing patient reports</h3><p>AI health reports of 10+ pages generated in under 2 minutes for carers at MyCare Malta.</p></div>
+      <div class="ledger-row"><b>~95%</b><h3>Less manual cross-sell work</h3><p>The AI Product Suggester, published on the Odoo App Store, picks optional, accessory and alternative products automatically.</p></div>
+      <div class="ledger-row"><b>1,000+</b><h3>Products checked per order</h3><p>Bulk quality control for Jazi, with partial pass and fail quantities on every line.</p></div>
+      <div class="ledger-row"><b>v20</b><h3>Upgraded to the newest Odoo</h3><p>Five migrations of code and database, the latest from Odoo 17 to Odoo 20.</p></div>
+      <div class="ledger-row"><b>Award</b><h3>Successful E-Procurement Implementation</h3><p>Recognised by FPCL for the e-bidding and vendor portal platform I designed and built.</p></div>
     </div>
   </section>
 
   <section id="work">
-    <h2>Case studies</h2>
-    <p class="sub">What each client needed, what I built, and what changed. Client data is never shown.</p>
+    <div class="sec-head">
+      <h2>Projects in detail</h2>
+      <p>Each project shows the problem, what I built and what changed. Open any row for the full case study. Client data is never shown.</p>
+    </div>
 
-    <article class="case">
-      <div class="case-head">
-        <h3>E-Masajid — Mosque Management System <span class="tag">Government</span></h3>
-        <span class="meta">Ministry of Islamic Affairs, KSA · Enseyab · End-to-end</span>
-      </div>
-      <p class="summary">A national mosque management platform built on Odoo, serving 6,000+ users and connected to mobile apps and external government systems.</p>
-      <div class="cols">
-        <div><h4>My role</h4><ul>
-          <li>Lead the Odoo development team across the full lifecycle: requirements, solution design, development, integration, go-live and production support.</li>
-          <li>Coordinate with stakeholders and own delivery quality.</li>
-        </ul></div>
-        <div><h4>What I built</h4><ul>
-          <li>Mosque management and HR workflows designed to scale.</li>
-          <li>REST APIs for the mobile apps and third-party systems.</li>
-          <li>Yaqeen national identity verification.</li>
-          <li>A donation portal integrated with a .NET backend.</li>
-          <li>Role-based security that mirrors the organisation's real access structure.</li>
-        </ul></div>
-      </div>
-      <p class="highlight">6,000+ users in production, with security groups, access rights and record rules so each user sees only the data their role allows.</p>
-      <div class="chips"><span class="chip">Odoo</span><span class="chip">Python</span><span class="chip">REST APIs</span><span class="chip">Yaqeen</span><span class="chip">RBAC</span><span class="chip">PostgreSQL</span></div>
-      <p class="meta" style="margin-top:12px"><a href="https://discovery.moia.gov.sa" target="_blank" rel="noopener">discovery.moia.gov.sa</a></p>
-    </article>
+    <div class="filters" role="group" aria-label="Filter projects by industry">
+      <button class="filter" type="button" data-f="all" aria-pressed="true">All<span class="n">8</span></button>
+      <button class="filter" type="button" data-f="gov" aria-pressed="false">Government<span class="n">1</span></button>
+      <button class="filter" type="button" data-f="health" aria-pressed="false">Healthcare<span class="n">2</span></button>
+      <button class="filter" type="button" data-f="ecom" aria-pressed="false">E-commerce &amp; retail<span class="n">4</span></button>
+      <button class="filter" type="button" data-f="proc" aria-pressed="false">Procurement<span class="n">1</span></button>
+      <button class="filter" type="button" data-f="ai" aria-pressed="false">Uses AI<span class="n">3</span></button>
+    </div>
+    <div class="tools">
+      <span class="muted" id="count" aria-live="polite">Showing 8 projects</span>
+      <button class="linkbtn" type="button" id="toggleAll">Open all case studies</button>
+    </div>
 
-    <article class="case">
-      <div class="case-head">
-        <h3>Jazi — Multi-Country E-Commerce & Warehousing <span class="tag">E-Commerce</span></h3>
-        <span class="meta">China & KSA · Remote · Senior Odoo Developer & Consultant</span>
-      </div>
-      <p class="summary">Odoo as the central data source for a website, vendor portal and mobile app, across multiple warehouses in China and Saudi Arabia.</p>
-      <div class="cols">
-        <div><h4>The challenge</h4><ul>
-          <li>Very large orders with 1,000+ different products that each needed quality inspection.</li>
-          <li>Heavy operations slowing the system and risking database deadlocks.</li>
-          <li>Barcode flows that did not match how the warehouse really worked.</li>
-        </ul></div>
-        <div><h4>What I built</h4><ul>
-          <li>Custom bulk quality control with partial pass and fail quantities per line.</li>
-          <li>Barcode workflows redesigned around real warehouse use cases.</li>
-          <li>Integration through AWS with queue-based data processing, plus Zoho.</li>
-          <li>Tamara, Tabby and Checkout.com payment gateways.</li>
-          <li>Background job queues, query optimisation, and alternative designs for services too slow to optimise in place.</li>
-        </ul></div>
-      </div>
-      <div class="chips"><span class="chip">Multi-warehouse</span><span class="chip">AWS queues</span><span class="chip">Zoho</span><span class="chip">Barcode</span><span class="chip">Quality</span><span class="chip">Performance</span></div>
-      <p class="meta" style="margin-top:12px"><a href="https://jazi.com/" target="_blank" rel="noopener">jazi.com</a></p>
-    </article>
+    <div class="cases">
 
-    <article class="case">
-      <div class="case-head">
-        <h3>All Life Sciences — Healthcare Recruitment & Academy <span class="tag">Healthcare · HR</span></h3>
-        <span class="meta">Malta · End-to-end implementation</span>
-      </div>
-      <p class="summary">A full Odoo implementation for a healthcare recruitment company, with AI built into the hiring process.</p>
-      <div class="cols">
-        <div><h4>Business modules</h4><ul>
-          <li>Project management, payroll, HR, recruitment, invoicing, sales and CRM.</li>
-          <li>Accounting set up for EU (Malta) requirements, with custom reports.</li>
-          <li>An academy with e-learning and certificates.</li>
-          <li>A contributor portal where team members enter timesheets and manage their tasks.</li>
-          <li>Student and B2B job portals.</li>
-        </ul></div>
-        <div><h4>AI features</h4><ul>
-          <li>AI recruitment assistant that analyses CVs, extracts key data, writes candidate summaries and ranks the best candidates.</li>
-          <li>AI auto-fill that completes long application forms in under a minute, which candidates review before submitting.</li>
-          <li>AI job descriptions published to external job networks.</li>
-          <li>AI-generated SEO content for the website.</li>
-        </ul></div>
-      </div>
-      <p class="highlight">Also migrated the system from Odoo 17 to 18, covering code and database.</p>
-      <div class="chips"><span class="chip">Recruitment</span><span class="chip">Payroll</span><span class="chip">eLearning</span><span class="chip">Portals</span><span class="chip">LLMs</span><span class="chip">Migration</span></div>
-      <p class="meta" style="margin-top:12px"><a href="https://www.alllifesciences.com/" target="_blank" rel="noopener">alllifesciences.com</a></p>
-    </article>
+      <details class="case" data-tags="gov" open>
+        <summary>
+          <div><h3>E-Masajid<span class="ind">Government</span></h3><p class="one">A national mosque management platform on Odoo for 6,000+ users</p></div>
+          <div class="where"><strong>Ministry of Islamic Affairs, KSA</strong>Team lead at Enseyab, end to end</div>
+          <span class="plus" aria-hidden="true">+</span>
+        </summary>
+        <div class="case-body">
+          <div><h4>The brief</h4><ul>
+            <li>One platform to manage mosques and their staff across the Kingdom.</li>
+            <li>Mobile apps and external government systems need live access to Odoo data.</li>
+            <li>Thousands of users with very different access needs.</li>
+          </ul></div>
+          <div><h4>What I built</h4><ul>
+            <li>Mosque management and HR workflows designed to scale.</li>
+            <li>REST APIs for the mobile apps and third-party systems.</li>
+            <li>Yaqeen national identity verification.</li>
+            <li>A donation portal integrated with a .NET backend.</li>
+          </ul></div>
+          <div><h4>How I led it</h4><ul>
+            <li>Led the Odoo team from requirements and solution design to go-live and production support.</li>
+            <li>Designed role-based security that mirrors the ministry's real structure.</li>
+            <li>Coordinated directly with stakeholders.</li>
+          </ul></div>
+          <div class="result"><p>Live in production for 6,000+ users, each seeing only the records their role allows.</p><a href="https://discovery.moia.gov.sa" target="_blank" rel="noopener">discovery.moia.gov.sa</a></div>
+          <div class="stack"><span>Odoo</span><span>Python</span><span>REST APIs</span><span>Yaqeen</span><span>Record rules</span><span>PostgreSQL</span></div>
+        </div>
+      </details>
 
-    <article class="case">
-      <div class="case-head">
-        <h3>MyCare Malta — Healthcare Platform <span class="tag">Healthcare</span></h3>
-        <span class="meta">Malta · End-to-end implementation</span>
-      </div>
-      <p class="summary">A healthcare platform connecting patients, pharmacies, wellness centres and hospitals.</p>
-      <div class="cols">
-        <div><h4>Platform</h4><ul>
-          <li>Patient self-service portal and appointment booking.</li>
-          <li>B2B portals and provider registration for pharmacies, wellness centres and hospitals.</li>
-          <li>Pharmacy operations and a central product master.</li>
-          <li>Recruitment.</li>
-        </ul></div>
-        <div><h4>AI assistant</h4><ul>
-          <li>Manages complete patient profiles and medical history.</li>
-          <li>Generates 10+ page patient health reports in under 2 minutes.</li>
-          <li>Carers can edit any section directly, or update it with AI.</li>
-        </ul></div>
-      </div>
-      <p class="highlight">Saves carers 80%+ of the time spent writing patient reports.</p>
-      <div class="chips"><span class="chip">Portals</span><span class="chip">Appointments</span><span class="chip">Pharmacy</span><span class="chip">AI reports</span></div>
-      <p class="meta" style="margin-top:12px"><a href="https://www.mycaremalta.com/" target="_blank" rel="noopener">mycaremalta.com</a></p>
-    </article>
+      <details class="case" data-tags="ecom">
+        <summary>
+          <div><h3>Jazi<span class="ind">E-commerce</span></h3><p class="one">Multi-country e-commerce and warehousing, with Odoo as the single source of data</p></div>
+          <div class="where"><strong>China and Saudi Arabia</strong>Senior developer and consultant, remote</div>
+          <span class="plus" aria-hidden="true">+</span>
+        </summary>
+        <div class="case-body">
+          <div><h4>The brief</h4><ul>
+            <li>Very large orders with 1,000+ different products that each need inspection.</li>
+            <li>Heavy operations slowing the system and risking database deadlocks.</li>
+            <li>Barcode flows that didn't match how the warehouses really work.</li>
+          </ul></div>
+          <div><h4>What I built</h4><ul>
+            <li>Bulk quality control with partial pass and fail quantities per line.</li>
+            <li>Barcode workflows redesigned around real warehouse use cases.</li>
+            <li>Odoo feeding the website, vendor portal and mobile app across multiple warehouses.</li>
+          </ul></div>
+          <div><h4>Integrations and performance</h4><ul>
+            <li>AWS integration with queue-based data processing, plus Zoho.</li>
+            <li>Tamara, Tabby and Checkout.com payments.</li>
+            <li>Background job queues, query tuning and redesigns for services too slow to fix in place.</li>
+          </ul></div>
+          <div class="result"><p>Quality checks on 1,000+ product orders without blocking the rest of the system.</p><a href="https://jazi.com/" target="_blank" rel="noopener">jazi.com</a></div>
+          <div class="stack"><span>Multi-warehouse</span><span>Quality</span><span>Barcode</span><span>AWS queues</span><span>Zoho</span><span>Job queues</span></div>
+        </div>
+      </details>
 
-    <article class="case">
-      <div class="case-head">
-        <h3>Kamar2 — Retail with a WhatsApp AI Assistant <span class="tag">Retail · AI</span></h3>
-        <span class="meta">Riyadh, KSA</span>
-      </div>
-      <p class="summary">Odoo customisation for retail operations, an upgrade to Odoo 20, and an AI assistant that serves customers on WhatsApp.</p>
-      <div class="cols">
-        <div><h4>Odoo work</h4><ul>
-          <li>Customisation for retail operations.</li>
-          <li>Migration of code and database from Odoo 17 to 20.</li>
-        </ul></div>
-        <div><h4>WhatsApp AI assistant</h4><ul>
-          <li>Answers customers from the company knowledge base.</li>
-          <li>With limited, controlled access to sales orders and quotations, gives order status and creates quotations, leads and helpdesk tickets.</li>
-          <li>For new B2B customers, creates the customer record, sends a quotation and suggests products.</li>
-          <li>Hands over to a human when needed.</li>
-        </ul></div>
-      </div>
-      <div class="chips"><span class="chip">WhatsApp Business API</span><span class="chip">LLMs</span><span class="chip">RAG</span><span class="chip">Odoo 20</span><span class="chip">Human-in-the-loop</span></div>
-      <p class="meta" style="margin-top:12px"><a href="https://kamar2.com/" target="_blank" rel="noopener">kamar2.com</a></p>
-    </article>
+      <details class="case" data-tags="health ai">
+        <summary>
+          <div><h3>All Life Sciences<span class="ind">Healthcare</span></h3><p class="one">Recruitment, academy and accounting in one Odoo, with AI in the hiring process</p></div>
+          <div class="where"><strong>Malta</strong>End-to-end implementation</div>
+          <span class="plus" aria-hidden="true">+</span>
+        </summary>
+        <div class="case-body">
+          <div><h4>Business modules</h4><ul>
+            <li>Project management, payroll, HR, recruitment, invoicing, sales and CRM.</li>
+            <li>Accounting set up for EU (Malta) rules, with custom reports.</li>
+            <li>An academy with e-learning and certificates.</li>
+            <li>A contributor portal for timesheets and tasks, plus student and B2B job portals.</li>
+          </ul></div>
+          <div><h4>AI in hiring</h4><ul>
+            <li>A recruitment assistant that reads CVs, extracts key data, writes summaries and ranks candidates.</li>
+            <li>AI auto-fill that completes long application forms in under a minute, for candidates to review.</li>
+            <li>AI job descriptions published to external job networks.</li>
+          </ul></div>
+          <div><h4>Also</h4><ul>
+            <li>AI-generated SEO content for the website.</li>
+            <li>Migrated code and database from Odoo 17 to 18.</li>
+          </ul></div>
+          <div class="result"><p>Candidates finish long applications in under a minute; recruiters get ranked shortlists.</p><a href="https://www.alllifesciences.com/" target="_blank" rel="noopener">alllifesciences.com</a></div>
+          <div class="stack"><span>Recruitment</span><span>Payroll</span><span>EU accounting</span><span>eLearning</span><span>Portals</span><span>LLMs</span></div>
+        </div>
+      </details>
 
-    <article class="case">
-      <div class="case-head">
-        <h3>FPCL — E-Procurement Platform <span class="tag">Energy · Procurement</span></h3>
-        <span class="meta">Islamabad, Pakistan · End-to-end · Award winner</span>
-      </div>
-      <p class="summary">A company-wide procurement platform covering the full purchase cycle, integrated with SAP.</p>
-      <div class="cols">
-        <div><h4>What I built</h4><ul>
-          <li>Designed the e-bidding solution end to end, turning the company's procurement rules into Odoo workflows.</li>
-          <li>Vendor portal for purchase requisitions, purchase orders, e-bidding, notifications and e-invoicing.</li>
-          <li>Multi-level approvals.</li>
-          <li>SAP integration.</li>
-        </ul></div>
-        <div><h4>Insight for management</h4><ul>
-          <li>Comparative bid statements that show all bids side by side and highlight the lowest-price vendor.</li>
-          <li>Clear, faster purchasing decisions.</li>
-        </ul></div>
-      </div>
-      <p class="highlight">Winner of the Successful E-Procurement Implementation Award. Also migrated the system from Odoo 15 to 17.</p>
-      <div class="chips"><span class="chip">Purchase</span><span class="chip">Vendor portal</span><span class="chip">E-bidding</span><span class="chip">SAP</span><span class="chip">E-invoicing</span></div>
-      <p class="meta" style="margin-top:12px"><a href="https://eproc.fpcl.com/" target="_blank" rel="noopener">eproc.fpcl.com</a></p>
-    </article>
+      <details class="case" data-tags="health ai">
+        <summary>
+          <div><h3>MyCare Malta<span class="ind">Healthcare</span></h3><p class="one">A platform linking patients, pharmacies, wellness centres and hospitals</p></div>
+          <div class="where"><strong>Malta</strong>End-to-end implementation</div>
+          <span class="plus" aria-hidden="true">+</span>
+        </summary>
+        <div class="case-body">
+          <div><h4>The platform</h4><ul>
+            <li>Patient self-service portal and appointment booking.</li>
+            <li>B2B portals and registration for pharmacies, wellness centres and hospitals.</li>
+            <li>Pharmacy operations, a central product master and recruitment.</li>
+          </ul></div>
+          <div><h4>AI health assistant</h4><ul>
+            <li>Keeps complete patient profiles and medical history.</li>
+            <li>Writes 10+ page health reports in under 2 minutes.</li>
+            <li>Carers edit any section by hand or update it with AI.</li>
+          </ul></div>
+          <div><h4>Why it matters</h4><ul>
+            <li>Carers spend their time with patients instead of on paperwork.</li>
+            <li>Every report stays under human review.</li>
+          </ul></div>
+          <div class="result"><p>Carers spend 80%+ less time writing patient reports.</p><a href="https://www.mycaremalta.com/" target="_blank" rel="noopener">mycaremalta.com</a></div>
+          <div class="stack"><span>Portals</span><span>Appointments</span><span>Pharmacy</span><span>AI reports</span><span>Human review</span></div>
+        </div>
+      </details>
 
-    <article class="case">
-      <div class="case-head">
-        <h3>Infiniarc — ERP & E-Commerce <span class="tag">Retail · Manufacturing</span></h3>
-        <span class="meta">Virtual Reality Solution, KSA · End-to-end</span>
-      </div>
-      <p class="summary">A full ERP and e-commerce implementation for the Saudi market.</p>
-      <div class="cols">
-        <div><h4>Scope</h4><ul>
-          <li>Supply chain, manufacturing, inventory and repair.</li>
-          <li>Retail operations with Point of Sale.</li>
-          <li>E-commerce with Payfort, Tabby, Tamara and Checkout.com.</li>
-        </ul></div>
-        <div><h4>Highlights</h4><ul>
-          <li>Full ZATCA e-invoicing (FATOORA) compliance: QR codes, UBL XML invoices and real-time validation.</li>
-          <li>A stock-reservation engine that prevents overselling across all sales channels.</li>
-        </ul></div>
-      </div>
-      <div class="chips"><span class="chip">ZATCA</span><span class="chip">POS</span><span class="chip">Manufacturing</span><span class="chip">eCommerce</span><span class="chip">Payment gateways</span></div>
-      <p class="meta" style="margin-top:12px"><a href="https://www.infiniarc.com/en" target="_blank" rel="noopener">infiniarc.com</a></p>
-    </article>
+      <details class="case" data-tags="ecom ai">
+        <summary>
+          <div><h3>Kamar2<span class="ind">Retail</span></h3><p class="one">Retail on Odoo 20, with an AI assistant serving customers on WhatsApp</p></div>
+          <div class="where"><strong>Riyadh, KSA</strong>Customisation, migration and AI</div>
+          <span class="plus" aria-hidden="true">+</span>
+        </summary>
+        <div class="case-body">
+          <div><h4>Odoo work</h4><ul>
+            <li>Customisation for retail operations.</li>
+            <li>Migrated code and database from Odoo 17 to 20.</li>
+          </ul></div>
+          <div><h4>WhatsApp AI assistant</h4><ul>
+            <li>Answers customers from the company knowledge base.</li>
+            <li>Gives order status and creates quotations, leads and helpdesk tickets, with limited, controlled access.</li>
+            <li>Sets up new B2B customers, sends a quotation and suggests products.</li>
+          </ul></div>
+          <div><h4>Safety</h4><ul>
+            <li>Hands over to a person when needed.</li>
+            <li>Only sees the sales data it is allowed to.</li>
+          </ul></div>
+          <div class="result"><p>Customers get answers and quotations on WhatsApp at any hour, with staff stepping in when needed.</p><a href="https://kamar2.com/" target="_blank" rel="noopener">kamar2.com</a></div>
+          <div class="stack"><span>WhatsApp Business API</span><span>RAG</span><span>LLMs</span><span>Odoo 20</span><span>Human handover</span></div>
+        </div>
+      </details>
 
-    <article class="case">
-      <div class="case-head">
-        <h3>Rental Car Management <span class="tag">Rental</span></h3>
-        <span class="meta">Riyadh, KSA</span>
-      </div>
-      <p class="summary">Odoo development and customisation for a car rental business, including a migration of code and database from Odoo 16 to 18.</p>
-      <p class="meta" style="margin-top:4px"><a href="https://rentalmm.com/" target="_blank" rel="noopener">rentalmm.com</a></p>
-    </article>
+      <details class="case" data-tags="proc">
+        <summary>
+          <div><h3>FPCL E-Procurement<span class="ind">Procurement</span></h3><p class="one">The full purchase cycle, from requisition to e-invoice, integrated with SAP</p></div>
+          <div class="where"><strong>Islamabad, Pakistan</strong>Designed and built end to end</div>
+          <span class="plus" aria-hidden="true">+</span>
+        </summary>
+        <div class="case-body">
+          <div><h4>What I built</h4><ul>
+            <li>An e-bidding solution that turns company procurement rules into Odoo workflows.</li>
+            <li>A vendor portal for purchase requisitions, purchase orders, bids, notifications and e-invoicing.</li>
+            <li>Multi-level approvals.</li>
+          </ul></div>
+          <div><h4>Insight for management</h4><ul>
+            <li>Comparative bid statements that show all bids side by side.</li>
+            <li>The lowest-price vendor highlighted, for faster decisions.</li>
+          </ul></div>
+          <div><h4>Integration</h4><ul>
+            <li>SAP integration.</li>
+            <li>Later migrated from Odoo 15 to 17.</li>
+          </ul></div>
+          <div class="result"><p>Won the Successful E-Procurement Implementation Award.</p><a href="https://eproc.fpcl.com/" target="_blank" rel="noopener">eproc.fpcl.com</a></div>
+          <div class="stack"><span>Purchase</span><span>Vendor portal</span><span>E-bidding</span><span>Approvals</span><span>SAP</span><span>E-invoicing</span></div>
+        </div>
+      </details>
 
-    <div class="card">
-      <h3>Also delivered</h3>
-      <p>Veterinary Hospital Management, Birch Tree, Grecko, Med Info, Employee Tracking, and university campus management modules.</p>
+      <details class="case" data-tags="ecom">
+        <summary>
+          <div><h3>Infiniarc<span class="ind">Retail &amp; manufacturing</span></h3><p class="one">Full ERP and e-commerce for the Saudi market, ZATCA compliant</p></div>
+          <div class="where"><strong>Saudi Arabia</strong>Virtual Reality Solution, end to end</div>
+          <span class="plus" aria-hidden="true">+</span>
+        </summary>
+        <div class="case-body">
+          <div><h4>Scope</h4><ul>
+            <li>Supply chain, manufacturing, inventory and repair.</li>
+            <li>Retail with Point of Sale.</li>
+            <li>E-commerce with Payfort, Tabby, Tamara and Checkout.com.</li>
+          </ul></div>
+          <div><h4>ZATCA e-invoicing</h4><ul>
+            <li>Full FATOORA compliance.</li>
+            <li>QR codes, UBL XML invoices and real-time validation.</li>
+          </ul></div>
+          <div><h4>Stock reservation</h4><ul>
+            <li>A reservation engine that stops overselling across every sales channel.</li>
+          </ul></div>
+          <div class="result"><p>One system for stores, website and factory, compliant with Saudi e-invoicing.</p><a href="https://www.infiniarc.com/en" target="_blank" rel="noopener">infiniarc.com</a></div>
+          <div class="stack"><span>ZATCA</span><span>POS</span><span>Manufacturing</span><span>Repair</span><span>eCommerce</span><span>Payments</span></div>
+        </div>
+      </details>
+
+      <details class="case" data-tags="ecom">
+        <summary>
+          <div><h3>Rental Car Management<span class="ind">Rental</span></h3><p class="one">Odoo customisation for a car rental business</p></div>
+          <div class="where"><strong>Riyadh, KSA</strong>Development and migration</div>
+          <span class="plus" aria-hidden="true">+</span>
+        </summary>
+        <div class="case-body">
+          <div><h4>What I did</h4><ul>
+            <li>Development and customisation for rental operations.</li>
+            <li>Migrated code and database from Odoo 16 to 18.</li>
+          </ul></div>
+          <div class="result"><p>Rental operations moved to a current Odoo version.</p><a href="https://rentalmm.com/" target="_blank" rel="noopener">rentalmm.com</a></div>
+        </div>
+      </details>
+    </div>
+    <p class="also"><b>Also delivered:</b> Veterinary Hospital Management, Birch Tree, Grecko, Med Info, Employee Tracking, and university campus management modules.</p>
+  </section>
+
+  <section id="migrations">
+    <div class="sec-head">
+      <h2>Five migrations, up to Odoo 20</h2>
+      <p>Upgrading Odoo means moving custom code and live data across versions without losing anything. These are the ones I've delivered.</p>
+    </div>
+    <div class="mig" role="img" aria-label="Migrations: FPCL from 15 to 17, Rental Car from 16 to 18, All Life Sciences from 17 to 18, an Enseyab client from 17 to 19, Kamar2 from 17 to 20.">
+      <div class="mig-grid">
+        <div class="axis"><span>Odoo version</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span></div>
+        <div class="lane"><span>FPCL</span><div class="bar" style="grid-column: 5 / 8; --span: 3"></div></div>
+        <div class="lane"><span>Rental Car</span><div class="bar" style="grid-column: 6 / 9; --span: 3"></div></div>
+        <div class="lane"><span>All Life Sciences</span><div class="bar" style="grid-column: 7 / 9; --span: 2"></div></div>
+        <div class="lane"><span>Enseyab client</span><div class="bar" style="grid-column: 7 / 10; --span: 3"></div></div>
+        <div class="lane"><span>Kamar2</span><div class="bar" style="grid-column: 7 / 11; --span: 4"></div></div>
+      </div>
+      <p class="mig-note">Each bar runs from the starting version (open circle) to the target version (filled circle). Hands-on experience across v12 to v20, Community and Enterprise.</p>
+    </div>
+  </section>
+
+  <section id="ai">
+    <div class="sec-head">
+      <h2>AI that respects permissions</h2>
+      <p>Since 2024 I've led AI work at Enseyab: assistants that answer from live Odoo data, but only with what the person asking is allowed to see.</p>
+    </div>
+    <div class="ai">
+      <div class="flow">
+        <ol>
+          <li><span class="dot">1</span><div><h4>Someone asks</h4><p>A customer or employee asks on the website widget, WhatsApp or a REST API.</p></div></li>
+          <li><span class="dot">2</span><div><h4>The assistant plans</h4><p>FastAPI and LangChain pick the right tool: orders, stock, tickets, HR or policy documents.</p></div></li>
+          <li class="key"><span class="dot">3</span><div><h4>Odoo checks access</h4><p>Every lookup goes through the user's security groups and record rules, so nothing unauthorised is exposed.</p></div></li>
+          <li><span class="dot">4</span><div><h4>Answer or hand over</h4><p>The assistant replies, creates the record, or passes the conversation to a person.</p></div></li>
+        </ol>
+      </div>
+      <div>
+        <div class="ai-list">
+          <div><h3>Company assistant</h3><p>Answers order, stock, ticket, HR and policy questions from live Odoo data, through a website widget and REST API.</p></div>
+          <div><h3>Automation</h3><p>Drafted emails, WhatsApp auto-replies with human handover, and automatic handling of helpdesk tickets and CRM leads.</p></div>
+          <div><h3>Industry assistants</h3><p>CV screening and form auto-fill for recruitment, health reports for carers, and a sales assistant on WhatsApp.</p></div>
+          <div><h3>Semantic search</h3><p>Embeddings and a vector database that find products by meaning, in any language.</p></div>
+        </div>
+        <p class="models">Built with Claude, ChatGPT, Gemini, Ollama and fine-tuned GPT models, using LangChain, LangGraph, RAG, pgvector and n8n.</p>
+      </div>
     </div>
   </section>
 
   <section id="apps">
-    <h2>Published Odoo apps</h2>
-    <p class="sub">Available on the official Odoo App Store for Odoo 19.</p>
-    <div class="grid2">
-      <div class="card">
-        <h3><a href="https://apps.odoo.com/apps/modules/19.0/ai_ecom_smart_search" target="_blank" rel="noopener">AI eCommerce — Smart Semantic Search</a></h3>
-        <p>Finds products by intent, not just keywords, including multilingual queries that are translated with AI. Built on embeddings and a vector database, replacing slow, limited keyword search.</p>
-      </div>
-      <div class="card">
-        <h3><a href="https://apps.odoo.com/apps/modules/19.0/ai_ecom_product_suggester" target="_blank" rel="noopener">AI eCommerce — Product Suggester</a></h3>
-        <p>Suggests optional, accessory and alternative products for cross-sell and up-sell, combining co-purchase mining, semantic embeddings and LLM inference. Saves about 95% of manual work.</p>
-      </div>
+    <div class="sec-head">
+      <h2>Published on the Odoo App Store</h2>
+      <p>Two AI apps for Odoo 19 eCommerce, available to any Odoo business.</p>
     </div>
-    <p class="meta" style="margin-top:14px">Try semantic search live: <a href="https://apps.erpoxa.com/find-products" target="_blank" rel="noopener">live demo</a></p>
+    <div class="apps">
+      <article class="app">
+        <span class="badge">Odoo 19</span>
+        <h3>AI eCommerce Smart Semantic Search</h3>
+        <p>Shoppers find products by what they mean, not just exact keywords. Multilingual queries are translated with AI, and results come from embeddings in a vector database instead of slow keyword matching.</p>
+        <a class="go" href="https://apps.odoo.com/apps/modules/19.0/ai_ecom_smart_search" target="_blank" rel="noopener">View on Odoo Apps</a>
+        <a href="https://apps.erpoxa.com/find-products" target="_blank" rel="noopener">Try the live demo</a>
+      </article>
+      <article class="app">
+        <span class="badge">Odoo 19</span>
+        <h3>AI eCommerce Product Suggester</h3>
+        <p>Suggests optional, accessory and alternative products for cross-sell and up-sell. Combines co-purchase history, semantic embeddings and LLM reasoning, saving about 95% of the manual work.</p>
+        <a class="go" href="https://apps.odoo.com/apps/modules/19.0/ai_ecom_product_suggester" target="_blank" rel="noopener">View on Odoo Apps</a>
+      </article>
+    </div>
   </section>
 
   <section id="experience">
-    <h2>Experience</h2>
-    <p class="sub">From junior developer to team lead.</p>
-    <div class="timeline">
-      <div class="job">
-        <h3>Senior Odoo Developer (Python) | Team Lead — Enseyab</h3>
-        <div class="meta">Jan 2024 – Present · Riyadh, Saudi Arabia</div>
+    <div class="sec-head">
+      <h2>Experience</h2>
+      <p>Four roles, each with more ownership than the last.</p>
+    </div>
+    <div class="xp">
+      <div class="when"><b>Jan 2024 to now</b>Riyadh, Saudi Arabia</div>
+      <div>
+        <h3>Senior Odoo Developer and Team Lead</h3>
+        <p class="co">Enseyab</p>
         <ul>
-          <li>Lead the Odoo team delivering the Ministry of Islamic Affairs' E-Masajid platform for 6,000+ users.</li>
-          <li>Lead the company's AI work: a FastAPI and LangChain assistant on Claude, ChatGPT, Gemini, Ollama and fine-tuned GPT models that answers order, stock, ticket, HR and policy questions from live Odoo data, via website widget and REST API.</li>
-          <li>Built AI automation: drafted emails, WhatsApp auto-replies with human handover, and automatic ticket and CRM lead handling.</li>
+          <li>Lead the Odoo team delivering E-Masajid for the Ministry of Islamic Affairs, with 6,000+ users.</li>
+          <li>Lead the company's AI work: permission-aware assistants on live Odoo data with FastAPI and LangChain.</li>
+          <li>Built AI automation for emails, WhatsApp replies, helpdesk tickets and CRM leads.</li>
           <li>Designed role-based security, extended to AI agents so they never expose unauthorised records.</li>
-          <li>Led v16→v18 and v17→v19 upgrades; optimised slow operations with query tuning, raw SQL and background job queues.</li>
-          <li>Own infrastructure on Contabo, Odoo.sh, AWS and on-premise; integrated Nana, Naqel, SMSA, Twilio, WhatsApp Business API, Ziwo and Yaqeen.</li>
+          <li>Led v16 to v18 and v17 to v19 upgrades; tuned slow operations with query optimisation, raw SQL and job queues.</li>
+          <li>Own infrastructure on Contabo, Odoo.sh, AWS and on-premise; integrated Nana, Naqel, SMSA, Twilio, WhatsApp, Ziwo and Yaqeen.</li>
         </ul>
       </div>
-      <div class="job">
-        <h3>Senior Odoo Developer (Python) | Team Lead — Virtual Reality Solution</h3>
-        <div class="meta">Nov 2022 – Jan 2024 · Saudi Arabia</div>
+      <div class="when"><b>Nov 2022 to Jan 2024</b>Saudi Arabia</div>
+      <div>
+        <h3>Senior Odoo Developer and Team Lead</h3>
+        <p class="co">Virtual Reality Solution</p>
         <ul>
-          <li>Implemented full Odoo ERP and e-commerce, including retail and POS for Infiniarc.</li>
-          <li>Delivered ZATCA e-invoicing (FATOORA) and integrated Payfort, Tabby, Tamara and Checkout.com.</li>
-          <li>Built a stock-reservation engine and mentored the developer team.</li>
+          <li>Implemented full ERP, e-commerce, retail and POS for Infiniarc.</li>
+          <li>Delivered ZATCA e-invoicing and integrated Payfort, Tabby, Tamara and Checkout.com.</li>
+          <li>Built a stock reservation engine and mentored the developer team.</li>
         </ul>
       </div>
-      <div class="job">
-        <h3>Odoo Developer (Python) — FPCL (FFBL Power Company Limited)</h3>
-        <div class="meta">May 2021 – Nov 2022 · Islamabad, Pakistan</div>
+      <div class="when"><b>May 2021 to Nov 2022</b>Islamabad, Pakistan</div>
+      <div>
+        <h3>Odoo Developer</h3>
+        <p class="co">FPCL (FFBL Power Company Limited)</p>
         <ul>
-          <li>Designed and built the award-winning E-Procurement platform with vendor portal, e-bidding, comparative statements and SAP integration.</li>
+          <li>Designed and built the award-winning e-procurement platform with vendor portal, e-bidding, comparative statements and SAP integration.</li>
         </ul>
       </div>
-      <div class="job">
-        <h3>Junior Odoo Developer (Python) — Aarsol (Pvt) Ltd</h3>
-        <div class="meta">Dec 2020 – May 2021 · Islamabad, Pakistan</div>
+      <div class="when"><b>Dec 2020 to May 2021</b>Islamabad, Pakistan</div>
+      <div>
+        <h3>Junior Odoo Developer</h3>
+        <p class="co">Aarsol (Pvt) Ltd</p>
         <ul>
-          <li>Worked on campus management modules for a university: reporting dashboards, registration forms and workflow automation.</li>
+          <li>Built campus management modules for a university: reporting dashboards, registration forms and workflow automation.</li>
         </ul>
       </div>
     </div>
   </section>
 
   <section id="skills">
-    <h2>Skills</h2>
-    <p class="sub">Technical and functional.</p>
+    <div class="sec-head">
+      <h2>Skills</h2>
+      <p>Technical depth, plus the functional knowledge to design processes with the business.</p>
+    </div>
     <div class="skills">
-      <div class="card"><h3>Odoo ERP</h3><p>v12–v20 (Community & Enterprise), ORM, custom modules, XML views, QWeb reports, OWL, automated actions, multi-company, code & database migration, performance optimisation, App Store publishing.</p></div>
-      <div class="card"><h3>Functional modules</h3><p>Sales, Purchase & Procurement, Accounting, HR & Payroll (Saudi and EU), Inventory & Multi-Warehouse, Manufacturing, Quality, Barcode, Rental, Retail & POS, eCommerce, Website, Portals, CRM, Helpdesk, Project, Recruitment, eLearning, School & Campus Management.</p></div>
-      <div class="card"><h3>AI & automation</h3><p>Claude, ChatGPT, Gemini, Ollama, fine-tuned GPT, prompt engineering, LangChain, LangGraph, RAG, embeddings, pgvector, semantic search, tool calling, n8n, WhatsApp AI assistants, human-in-the-loop.</p></div>
-      <div class="card"><h3>Security</h3><p>Role-based access control, security groups, access rights, record rules, data-leakage prevention, permission-aware APIs and AI agents.</p></div>
-      <div class="card"><h3>Backend, frontend & infrastructure</h3><p>Python, FastAPI, Pydantic, SQLAlchemy, PostgreSQL, Redis, REST APIs, JavaScript, OWL, QWeb. Odoo.sh, AWS, Contabo, Hostinger, Linux, Docker, Nginx, Cloudflare, Git.</p></div>
-      <div class="card"><h3>Integrations</h3><p>ZATCA (FATOORA), Yaqeen, SAP, Payfort, Tabby, Tamara, Checkout.com, Nana, Naqel, SMSA, Twilio, WhatsApp Business API, Ziwo, Zoho.</p></div>
+      <div class="skill"><h3>Odoo development</h3><p>v12 to v20, Community and Enterprise. ORM, custom modules, XML views, QWeb reports, OWL, automated actions, multi-company, migrations, performance tuning and App Store publishing.</p></div>
+      <div class="skill"><h3>Functional modules</h3><p>Sales, Purchase, Accounting, HR and Payroll (Saudi and EU), Inventory, Manufacturing, Quality, Barcode, Rental, POS, eCommerce, Website, Portals, CRM, Helpdesk, Project, Recruitment, eLearning and Campus Management.</p></div>
+      <div class="skill"><h3>AI and automation</h3><p>Claude, ChatGPT, Gemini, Ollama, fine-tuned GPT, prompt engineering, LangChain, LangGraph, RAG, embeddings, pgvector, semantic search, tool calling, n8n and human-in-the-loop design.</p></div>
+      <div class="skill"><h3>Security</h3><p>Role-based access, security groups, access rights, record rules, data leakage prevention, and permission-aware APIs and AI agents.</p></div>
+      <div class="skill"><h3>Backend and infrastructure</h3><p>Python, FastAPI, Pydantic, SQLAlchemy, PostgreSQL, Redis, REST APIs, JavaScript. Odoo.sh, AWS, Contabo, Hostinger, Linux, Docker, Nginx, Cloudflare and Git.</p></div>
+      <div class="skill"><h3>Integrations</h3><p>ZATCA (FATOORA), Yaqeen, SAP, Payfort, Tabby, Tamara, Checkout.com, Nana, Naqel, SMSA, Twilio, WhatsApp Business API, Ziwo and Zoho.</p></div>
     </div>
   </section>
 
-  <section id="certs">
-    <h2>Certifications & education</h2>
-    <div class="grid2" style="margin-top:20px">
-      <div class="card"><h3>Certifications</h3><p>Odoo Functional Certification (v16) — Odoo S.A., 2024<br>LangChain Academy — LangGraph & LangChain Essentials<br>Build with AI: Custom Chatbots with n8n — LinkedIn Learning, 2026<br>AI & Machine Learning Training, 2026<br>Successful E-Procurement Implementation Award — FPCL</p></div>
-      <div class="card"><h3>Education & languages</h3><p>Bachelor of Computer Science, Abdul Wali Khan University Mardan, Pakistan (2016–2020)<br><br>English (Professional) · Urdu (Fluent) · Pashto (Native)</p></div>
-    </div>
-  </section>
-
-</main>
-
-<footer id="contact">
-  <div class="wrap">
-    <h2>Let's work together</h2>
-    <p class="sub">Open to Senior Odoo, techno-functional and AI integration roles. Iqama transferable, 1-month notice.</p>
-    <div class="row">
-      <div class="actions">
-        <a class="btn primary" href="mailto:ahmadkhanamir17@gmail.com">ahmadkhanamir17@gmail.com</a>
-        <a class="btn" href="tel:+966570544295">+966 570 544 295</a>
-        <a class="btn" href="Ahmad_Khan_CV.pdf" download>Download CV</a>
+  <section id="credentials">
+    <div class="creds">
+      <div>
+        <h2>Certifications</h2>
+        <ul>
+          <li>Odoo Functional Certification (v16), Odoo S.A.<span>2024</span></li>
+          <li>LangGraph and LangChain Essentials, LangChain Academy<span></span></li>
+          <li>Build with AI: Custom Chatbots with n8n, LinkedIn Learning<span>2026</span></li>
+          <li>AI and Machine Learning Training<span>2026</span></li>
+          <li>Successful E-Procurement Implementation Award, FPCL<span>Award</span></li>
+        </ul>
       </div>
-      <span class="small">© 2026 Ahmad Khan · Riyadh, Saudi Arabia</span>
+      <div>
+        <h2>Education</h2>
+        <ul>
+          <li>Bachelor of Computer Science, Abdul Wali Khan University Mardan<span>2016 to 2020</span></li>
+        </ul>
+        <h2 style="margin-top:36px">Languages</h2>
+        <ul>
+          <li>English<span>Professional</span></li>
+          <li>Urdu<span>Fluent</span></li>
+          <li>Pashto<span>Native</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div>
+      <h2>Need an Odoo lead who can also ship AI?</h2>
+      <p>I'm open to senior Odoo, techno-functional and AI integration roles. Iqama transferable, available on 1 month's notice, open to relocation.</p>
+    </div>
+    <div class="actions">
+      <a class="btn solid" href="mailto:ahmadkhanamir17@gmail.com">ahmadkhanamir17@gmail.com</a>
+      <a class="btn" href="tel:+966570544295">+966 570 544 295</a>
+      <a class="btn" href="https://wa.me/966570544295" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn" href="Ahmad_Khan_CV.pdf" download>Download CV</a>
     </div>
   </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap"><span>Ahmad Khan, Riyadh, Saudi Arabia</span><span>Updated October 2026</span></div>
 </footer>
 
+<script>
+(function () {
+  // theme
+  var root = document.documentElement, KEY = "ak-theme";
+  try { var saved = localStorage.getItem(KEY); if (saved) root.setAttribute("data-theme", saved); } catch (e) {}
+  document.getElementById("theme").addEventListener("click", function () {
+    var dark = root.getAttribute("data-theme") ? root.getAttribute("data-theme") === "dark"
+      : window.matchMedia("(prefers-color-scheme: dark)").matches;
+    var next = dark ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    try { localStorage.setItem(KEY, next); } catch (e) {}
+  });
+
+  // project filters
+  var cases = [].slice.call(document.querySelectorAll(".case"));
+  var filters = [].slice.call(document.querySelectorAll(".filter"));
+  var count = document.getElementById("count");
+  filters.forEach(function (b) {
+    b.addEventListener("click", function () {
+      var f = b.dataset.f, n = 0;
+      filters.forEach(function (x) { x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
+      cases.forEach(function (c) {
+        var show = f === "all" || c.dataset.tags.split(" ").indexOf(f) > -1;
+        c.hidden = !show; if (show) n++;
+      });
+      count.textContent = "Showing " + n + (n === 1 ? " project" : " projects");
+    });
+  });
+
+  // open / close all
+  var toggle = document.getElementById("toggleAll");
+  function sync() {
+    var allOpen = cases.every(function (c) { return c.open; });
+    toggle.textContent = allOpen ? "Close all case studies" : "Open all case studies";
+  }
+  toggle.addEventListener("click", function () {
+    var allOpen = cases.every(function (c) { return c.open; });
+    cases.forEach(function (c) { c.open = !allOpen; });
+    sync();
+  });
+  cases.forEach(function (c) { c.addEventListener("toggle", sync); });
+  window.addEventListener("beforeprint", function () { cases.forEach(function (c) { c.open = true; }); });
+})();
+</script>
 </body>
 </html>
