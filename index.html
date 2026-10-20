@@ -395,15 +395,15 @@ section { padding: 88px 0 0; }
     </div>
 
     <div class="filters" role="group" aria-label="Filter projects by industry">
-      <button class="filter" type="button" data-f="all" aria-pressed="true">All<span class="n">8</span></button>
+      <button class="filter" type="button" data-f="all" aria-pressed="true">All<span class="n">9</span></button>
       <button class="filter" type="button" data-f="gov" aria-pressed="false">Government<span class="n">1</span></button>
       <button class="filter" type="button" data-f="health" aria-pressed="false">Healthcare<span class="n">2</span></button>
-      <button class="filter" type="button" data-f="ecom" aria-pressed="false">E-commerce &amp; retail<span class="n">4</span></button>
+      <button class="filter" type="button" data-f="ecom" aria-pressed="false">E-commerce &amp; retail<span class="n">5</span></button>
       <button class="filter" type="button" data-f="proc" aria-pressed="false">Procurement<span class="n">1</span></button>
-      <button class="filter" type="button" data-f="ai" aria-pressed="false">Uses AI<span class="n">3</span></button>
+      <button class="filter" type="button" data-f="ai" aria-pressed="false">Uses AI<span class="n">4</span></button>
     </div>
     <div class="tools">
-      <span class="muted" id="count" aria-live="polite">Showing 8 projects</span>
+      <span class="muted" id="count" aria-live="polite">Showing 9 projects</span>
       <button class="linkbtn" type="button" id="toggleAll">Open all case studies</button>
     </div>
 
@@ -434,6 +434,35 @@ section { padding: 88px 0 0; }
           </ul></div>
           <div class="result"><p>Live in production for 6,000+ users, each seeing only the records their role allows.</p><a href="https://discovery.moia.gov.sa" target="_blank" rel="noopener">discovery.moia.gov.sa</a></div>
           <div class="stack"><span>Odoo</span><span>Python</span><span>REST APIs</span><span>Yaqeen</span><span>Record rules</span><span>PostgreSQL</span></div>
+        </div>
+      </details>
+
+      <details class="case" data-tags="ai ecom">
+        <summary>
+          <div><h3>SupportIQ<span class="ind">Open source · AI</span></h3><p class="one">A self-hosted platform for building AI support agents without code, with human hand-off built in</p></div>
+          <div class="where"><strong>Personal project</strong>Designed and built end to end</div>
+          <span class="plus" aria-hidden="true">+</span>
+        </summary>
+        <div class="case-body">
+          <div><h4>The brief</h4><ul>
+            <li>Companies want AI support agents but cannot hard-code a new bot for every team.</li>
+            <li>Answers must come from their own documents and live order data, never guesses.</li>
+            <li>Refunds and angry customers still need a person in the loop.</li>
+          </ul></div>
+          <div><h4>What I built</h4><ul>
+            <li>An admin panel where each agent's model, prompt, knowledge and tools are set without code; LangGraph builds the agent at runtime.</li>
+            <li>Hybrid search over uploaded PDFs, text and web pages, with sources shown on every answer.</li>
+            <li>Approval steps for risky actions, escalation to a ticket inbox, and AI-drafted replies and summaries for staff.</li>
+            <li>A one-line website widget, a REST API, MCP tool servers and an Odoo connector module.</li>
+          </ul></div>
+          <div><h4>Engineering</h4><ul>
+            <li>Works with OpenAI, Claude, Gemini and Ollama, with automatic fallback between models.</li>
+            <li>Long-conversation memory with running summaries and per-customer facts.</li>
+            <li>Encrypted keys, rate limits, audit log, signed webhooks and 210 automated tests.</li>
+          </ul></div>
+          <img src="supportiq-dashboard.jpg" alt="SupportIQ admin dashboard showing conversations, satisfaction, pending approvals and escalations" loading="lazy" width="1400" height="875" style="grid-column:1/-1;width:100%;height:auto;border-radius:12px;border:1px solid var(--rule)">
+          <div class="result"><p>A support agent goes from idea to live website chat in minutes, and hands over to a person when it should.</p><a href="https://github.com/ahmadkhanamir17/supportiq" target="_blank" rel="noopener">github.com/ahmadkhanamir17/supportiq</a></div>
+          <div class="stack"><span>FastAPI</span><span>LangGraph</span><span>LangChain</span><span>RAG</span><span>pgvector</span><span>Redis</span><span>MCP</span><span>Odoo</span></div>
         </div>
       </details>
 
