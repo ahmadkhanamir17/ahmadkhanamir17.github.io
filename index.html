@@ -11,6 +11,8 @@
 <meta property="og:title" content="Ahmad Khan | Senior Odoo Developer & AI Automation Engineer">
 <meta property="og:description" content="6 years, 12+ Odoo projects, 5 migrations up to Odoo 20, AI assistants and published Odoo apps.">
 <meta property="og:url" content="https://ahmadkhanamir17.github.io/">
+<meta property="og:image" content="https://ahmadkhanamir17.github.io/ahmad-khan.jpg">
+<meta name="twitter:card" content="summary">
 <link rel="canonical" href="https://ahmadkhanamir17.github.io/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F6B4F'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='700' font-size='30' text-anchor='middle' fill='white'%3EAK%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,6 +24,7 @@
   "@type": "Person",
   "name": "Ahmad Khan",
   "jobTitle": "Senior Odoo Developer",
+  "image": "https://ahmadkhanamir17.github.io/ahmad-khan.jpg",
   "url": "https://ahmadkhanamir17.github.io/",
   "email": "mailto:ahmadkhanamir17@gmail.com",
   "address": {"@type": "PostalAddress", "addressLocality": "Riyadh", "addressCountry": "SA"},
@@ -86,6 +89,10 @@ p { margin: 0; }
 .hero { padding: 64px 0 72px; display: grid; grid-template-columns: 1.05fr 1fr; gap: 56px; align-items: center; }
 @media (max-width: 960px) { .hero { grid-template-columns: 1fr; gap: 40px; padding-top: 40px; } }
 .hero h1 { font-size: clamp(42px, 6.4vw, 76px); font-weight: 800; letter-spacing: -0.035em; line-height: 1.02; }
+.who { display: flex; align-items: center; gap: 24px; }
+.who h1 { font-size: clamp(40px, 5vw, 64px); }
+.photo { width: 120px; height: 120px; flex: none; border-radius: 50%; object-fit: cover; border: 4px solid var(--surface); box-shadow: 0 0 0 2px var(--green), 0 14px 30px -16px rgba(15,60,45,.5); }
+@media (max-width: 520px) { .who { gap: 16px; } .photo { width: 84px; height: 84px; border-width: 3px; } }
 .hero .role { margin-top: 18px; font: 600 20px/1.4 var(--display); color: var(--green); }
 .hero .intro { margin-top: 18px; font-size: 18.5px; color: var(--muted); max-width: 56ch; }
 .hero .actions { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 10px; }
@@ -318,7 +325,10 @@ section { padding: 88px 0 0; }
 
   <div class="hero" id="top">
     <div>
-      <h1>Ahmad Khan</h1>
+      <div class="who">
+        <img class="photo" src="ahmad-khan.jpg" alt="Ahmad Khan" width="120" height="120">
+        <h1>Ahmad Khan</h1>
+      </div>
       <p class="role">Senior Odoo Developer, Techno-Functional Consultant and AI Automation Engineer</p>
       <p class="intro">I design, build and scale Odoo ERP systems, then make them smarter with AI. Six years and 12+ delivered projects for government, healthcare, e-commerce, procurement, retail and manufacturing clients in Saudi Arabia, Malta, Pakistan and China, from requirements and solution design through go-live and support.</p>
       <div class="actions">
