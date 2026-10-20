@@ -227,6 +227,25 @@ section { padding: 88px 0 0; }
 .creds ul { list-style: none; padding: 0; margin: 14px 0 0; border-top: 2px solid var(--ink); }
 .creds li { padding: 12px 0; border-bottom: 1px solid var(--rule); display: flex; justify-content: space-between; gap: 16px; }
 .creds li span { color: var(--muted); white-space: nowrap; font-size: 15px; }
+.cert-feature { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 36px; align-items: center; background: var(--surface); border: 1px solid var(--rule); border-radius: var(--r-lg); padding: 24px; }
+@media (max-width: 860px) { .cert-feature { grid-template-columns: 1fr; gap: 22px; padding: 16px; } }
+.cert-img { display: block; border-radius: var(--r-md); overflow: hidden; border: 1px solid var(--rule); }
+.cert-img img { display: block; width: 100%; height: auto; }
+.cert-info { display: flex; flex-direction: column; gap: 14px; align-items: flex-start; }
+.cert-info .badge { font: 600 12.5px var(--body); padding: 4px 10px; border-radius: 999px; background: var(--green-soft); color: var(--green); }
+.cert-info h3 { font-size: 26px; }
+.cert-info dl { margin: 0; width: 100%; }
+.cert-info dl div { display: grid; grid-template-columns: 130px 1fr; padding: 8px 0; border-bottom: 1px dashed var(--rule); font-size: 15px; }
+.cert-info dt { color: var(--muted); }
+.cert-info dd { margin: 0; font-weight: 600; }
+.cert-links { display: flex; flex-wrap: wrap; gap: 10px; }
+.cert-list { list-style: none; padding: 0; margin: 28px 0 0; border-top: 2px solid var(--ink); }
+.cert-list li { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--rule); }
+.cert-list b { display: block; font-weight: 600; }
+.cert-list li div span { color: var(--muted); font-size: 15px; }
+.cert-list a { font-weight: 600; white-space: nowrap; }
+.creds { grid-template-columns: 1.4fr 1fr !important; }
+@media (max-width: 800px) { .creds { grid-template-columns: 1fr !important; } }
 
 /* contact */
 .contact { margin-top: 96px; background: var(--ink); color: var(--paper); }
@@ -259,6 +278,7 @@ section { padding: 88px 0 0; }
       <a href="#apps">Apps</a>
       <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
+      <a href="#certifications">Certificates</a>
     </nav>
     <button class="iconbtn" id="theme" type="button" aria-label="Switch light or dark theme">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
@@ -682,24 +702,48 @@ section { padding: 88px 0 0; }
     </div>
   </section>
 
+  <section id="certifications">
+    <div class="sec-head">
+      <h2>Certifications</h2>
+      <p>Every certificate links to its original, so you can check it yourself.</p>
+    </div>
+    <div class="cert-feature">
+      <a class="cert-img" href="https://drive.google.com/file/d/1Nahzex3twvn_1r3g1TTjW69CnTlituvC/view?usp=sharing" target="_blank" rel="noopener">
+        <img src="odoo-16-functional-certificate.png" alt="Odoo 16 Functional Certification awarded to Ahmad Khan by Odoo S.A. on 1 February 2024, certification number 0000334159" width="1286" height="908" loading="lazy">
+      </a>
+      <div class="cert-info">
+        <span class="badge">Official Odoo certification</span>
+        <h3>Odoo 16 Functional Certification</h3>
+        <dl>
+          <div><dt>Issued by</dt><dd>Odoo S.A.</dd></div>
+          <div><dt>Date</dt><dd>1 February 2024</dd></div>
+          <div><dt>Certificate no.</dt><dd>0000334159</dd></div>
+        </dl>
+        <div class="cert-links">
+          <a class="btn solid" href="https://drive.google.com/file/d/1Nahzex3twvn_1r3g1TTjW69CnTlituvC/view?usp=sharing" target="_blank" rel="noopener">View certificate</a>
+          <a class="btn" href="https://www.odoo.com/survey/305b4006-722e-4bf3-8cc6-b6c44de24ff7" target="_blank" rel="noopener">Verify on odoo.com</a>
+        </div>
+      </div>
+    </div>
+    <ul class="cert-list">
+      <li><div><b>LangChain Academy certificate</b><span>LangGraph and LangChain Essentials</span></div><a href="https://academy.langchain.com/certificates/h5wxxakkha" target="_blank" rel="noopener">View certificate</a></li>
+      <li><div><b>LangChain Academy certificate</b><span>LangGraph and LangChain Essentials</span></div><a href="https://academy.langchain.com/certificates/gczsuikpel" target="_blank" rel="noopener">View certificate</a></li>
+      <li><div><b>Build with AI: Custom Chatbots with n8n</b><span>LinkedIn Learning, 2026</span></div><a href="https://www.linkedin.com/learning/certificates/b9a1e239dd347c113a636623993840561d6c438f67963e97acdb3637413b36d4" target="_blank" rel="noopener">View certificate</a></li>
+      <li><div><b>AI and Machine Learning Training</b><span>Udemy, 2026</span></div><a href="https://www.udemy.com/certificate/UC-fb8db81b-6674-43b5-8cbc-5c0a363e337a/" target="_blank" rel="noopener">View certificate</a></li>
+      <li><div><b>Successful E-Procurement Implementation Award</b><span>FPCL (FFBL Power Company Limited)</span></div><span class="muted">Award</span></li>
+    </ul>
+  </section>
+
   <section id="credentials">
     <div class="creds">
-      <div>
-        <h2>Certifications</h2>
-        <ul>
-          <li>Odoo Functional Certification (v16), Odoo S.A.<span>2024</span></li>
-          <li>LangGraph and LangChain Essentials, LangChain Academy<span></span></li>
-          <li>Build with AI: Custom Chatbots with n8n, LinkedIn Learning<span>2026</span></li>
-          <li>AI and Machine Learning Training<span>2026</span></li>
-          <li>Successful E-Procurement Implementation Award, FPCL<span>Award</span></li>
-        </ul>
-      </div>
       <div>
         <h2>Education</h2>
         <ul>
           <li>Bachelor of Computer Science, Abdul Wali Khan University Mardan<span>2016 to 2020</span></li>
         </ul>
-        <h2 style="margin-top:36px">Languages</h2>
+      </div>
+      <div>
+        <h2>Languages</h2>
         <ul>
           <li>English<span>Professional</span></li>
           <li>Urdu<span>Fluent</span></li>
