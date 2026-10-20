@@ -77,7 +77,7 @@ p { margin: 0; }
 .links { display: flex; gap: 22px; }
 .links a { color: var(--muted); text-decoration: none; font-weight: 500; font-size: 15px; }
 .links a:hover { color: var(--ink); }
-@media (max-width: 880px) { .links { display: none; } }
+@media (max-width: 1100px) { .links { display: none; } }
 @media (max-width: 420px) { .topbar .btn { padding: 0 12px; font-size: 14px; } .topbar .wrap { gap: 10px; } }
 .iconbtn { width: 40px; height: 40px; border-radius: var(--r-md); border: 1px solid var(--rule); background: var(--surface); color: var(--ink); display: grid; place-items: center; cursor: pointer; }
 .btn { white-space: nowrap; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 18px; border-radius: var(--r-md); font: 600 15px var(--body); text-decoration: none; border: 1px solid var(--rule); background: var(--surface); color: var(--ink); cursor: pointer; }
@@ -172,6 +172,37 @@ section { padding: 88px 0 0; }
 .also { margin-top: 22px; color: var(--muted); }
 .also b { color: var(--ink); }
 
+/* supportiq */
+.siq { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 28px; align-items: start; }
+@media (max-width: 900px) { .siq { grid-template-columns: 1fr; } }
+.siq-video { margin: 0; }
+.siq-video video { display: block; width: 100%; height: auto; border-radius: var(--r-lg); border: 1px solid var(--rule); background: #111; box-shadow: 0 24px 50px -30px rgba(15,60,45,.45); }
+.siq-video figcaption { margin-top: 8px; font-size: 14px; color: var(--muted); }
+.siq-facts { margin: 0; border-top: 2px solid var(--ink); }
+.siq-facts div { padding: 12px 0; border-bottom: 1px solid var(--rule); }
+.siq-facts dt { font: 700 15px var(--display); }
+.siq-facts dd { margin: 2px 0 0; color: var(--muted); font-size: 15px; }
+.siq-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.siq-grid { margin-top: 40px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 36px; }
+@media (max-width: 900px) { .siq-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .siq-grid { grid-template-columns: 1fr; } }
+.siq-grid div { padding: 18px 0; border-top: 1px solid var(--rule); }
+.siq-grid h3 { font-size: 18px; margin-bottom: 6px; }
+.siq-grid p { color: var(--muted); font-size: 15.5px; }
+.siq-flow { margin-top: 28px; background: var(--surface); border: 1px solid var(--rule); border-radius: var(--r-lg); padding: 22px 24px; }
+.siq-flow h3 { font-size: 18px; margin-bottom: 14px; }
+.siq-flow ol { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 8px; counter-reset: step; }
+.siq-flow li { counter-increment: step; position: relative; padding: 12px 12px 12px; border-radius: var(--r-md); background: var(--sunken); font-size: 13.5px; color: var(--muted); }
+.siq-flow li::before { content: counter(step); display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: var(--green); color: var(--on-green); font: 700 12px var(--body); margin-bottom: 8px; }
+.siq-flow li:nth-child(5) { background: var(--amber-soft); }
+.siq-flow li:nth-child(5)::before { background: var(--amber); }
+.siq-flow b { display: block; color: var(--ink); font-size: 14.5px; margin-bottom: 2px; }
+@media (max-width: 900px) { .siq-flow ol { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 520px) { .siq-flow ol { grid-template-columns: 1fr 1fr; } }
+.siq-more { margin-top: 28px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px 36px; }
+@media (max-width: 800px) { .siq-more { grid-template-columns: 1fr; } }
+.siq-more h4 { margin: 0 0 6px; font: 700 16px var(--display); }
+.siq-more p { color: var(--muted); font-size: 15px; }
 /* migrations */
 .mig { background: var(--surface); border: 1px solid var(--rule); border-radius: var(--r-lg); padding: 28px 28px 20px; overflow-x: auto; }
 .mig-grid { min-width: 640px; }
@@ -306,6 +337,7 @@ section { padding: 88px 0 0; }
     <a class="brand" href="#top"><i>AK</i>Ahmad Khan</a>
     <nav class="links" aria-label="Sections">
       <a href="#work">Projects</a>
+      <a href="#supportiq">SupportIQ</a>
       <a href="#ai">AI work</a>
       <a href="#apps">Apps</a>
       <a href="#experience">Experience</a>
@@ -636,6 +668,62 @@ section { padding: 88px 0 0; }
       </details>
     </div>
     <p class="also"><b>Also delivered:</b> Veterinary Hospital Management, Birch Tree, Grecko, Med Info, Employee Tracking, and university campus management modules.</p>
+  </section>
+
+  <section id="supportiq">
+    <div class="sec-head">
+      <h2>SupportIQ, my AI support platform</h2>
+      <p><b>AI support agents, built without code.</b> A self-hosted platform for building AI customer-support agents from an admin panel. Plug them into any website, Odoo page or app, ground them in your own documents and data, and hand off to a person when it matters.</p>
+    </div>
+    <div class="siq">
+      <figure class="siq-video">
+        <video controls preload="metadata" playsinline poster="media/supportiq-poster.jpg" width="1920" height="1080">
+          <source src="media/supportiq-demo.mp4" type="video/mp4">
+          <a href="https://drive.google.com/file/d/1eWWLj6rGIPAGwxz1Yu354JPg1cALhTPs/view?usp=sharing">Watch the SupportIQ demo</a>
+        </video>
+        <figcaption>Product demo, under 2 minutes</figcaption>
+      </figure>
+      <div class="siq-side">
+        <dl class="siq-facts">
+          <div><dt>Agents</dt><dd>Configured in the admin, not coded</dd></div>
+          <div><dt>Models</dt><dd>OpenAI, Claude, Gemini, Ollama, with automatic fallback</dd></div>
+          <div><dt>Knowledge</dt><dd>Hybrid vector and full-text search, sources on every answer</dd></div>
+          <div><dt>Quality</dt><dd>210 automated tests and agent evaluation suites</dd></div>
+        </dl>
+        <div class="siq-links">
+          <a class="btn solid" href="media/SupportIQ-overview.pdf" target="_blank" rel="noopener">Read the overview (PDF)</a>
+          <a class="btn" href="https://drive.google.com/file/d/1eWWLj6rGIPAGwxz1Yu354JPg1cALhTPs/view?usp=sharing" target="_blank" rel="noopener">Demo on Google Drive</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="siq-grid">
+      <div><h3>No-code agents</h3><p>Pick the model, write versioned prompts, attach knowledge and switch tools on or off. Each agent's LangGraph is compiled at runtime and rebuilt whenever its setup changes. A setup wizard and readiness checklist guide new agents.</p></div>
+      <div><h3>Actions with guardrails</h3><p>Tools look up orders, stock and warranties. Risky actions such as refunds pause until a person approves them.</p></div>
+      <div><h3>Human hand-off</h3><p>Low confidence or a direct request escalates the chat, opens a ticket and pauses the bot. Staff get an AI hand-over summary and an AI-drafted reply they can edit.</p></div>
+      <div><h3>Memory that scales</h3><p>Running summaries keep long chats sharp, and the agent remembers key facts about each customer across conversations.</p></div>
+      <div><h3>Agent playground</h3><p>Test any agent as a real customer before it goes live. Every reply shows its intent, confidence, tool calls and document sources.</p></div>
+      <div><h3>One-line website widget</h3><p>A single script tag on any website, Odoo page or shop. Streaming replies, quick-reply chips, ratings, and live human replies in the same widget. Public keys are locked to your domains.</p></div>
+    </div>
+
+    <div class="siq-flow" aria-label="How a message flows through SupportIQ">
+      <h3>How a message flows</h3>
+      <ol>
+        <li><b>Memory</b><span>Running summary and customer facts</span></li>
+        <li><b>Recall</b><span>Relevant older messages</span></li>
+        <li><b>Retrieve</b><span>Hybrid search over the agent's knowledge</span></li>
+        <li><b>Agent and tools</b><span>LLM calls orders, stock and MCP tools</span></li>
+        <li><b>Approve</b><span>Risky actions wait for a person</span></li>
+        <li><b>Finalize</b><span>Intent, confidence, follow-ups, hand-off</span></li>
+      </ol>
+    </div>
+
+    <div class="siq-more">
+      <div><h4>Integrations</h4><p>REST API with API keys, signed webhooks, MCP tool servers, an Odoo connector module and n8n-friendly endpoints.</p></div>
+      <div><h4>Production basics</h4><p>JWT roles, hashed and rate-limited API keys, audit log, retention jobs, SSRF protection, security headers and tracing hooks.</p></div>
+      <div><h4>Admin</h4><p>Live dashboard, Ctrl+K search across agents, conversations, customers and tickets, dark mode and a mobile-friendly layout.</p></div>
+    </div>
+    <div class="stack" style="margin-top:18px"><span>Python 3.12</span><span>FastAPI</span><span>Pydantic v2</span><span>SQLAlchemy 2 async</span><span>PostgreSQL + pgvector</span><span>Alembic</span><span>Redis + arq</span><span>LangGraph</span><span>LangChain</span><span>MCP</span><span>Jinja2 + HTMX</span><span>Docker</span></div>
   </section>
 
   <section id="migrations">
